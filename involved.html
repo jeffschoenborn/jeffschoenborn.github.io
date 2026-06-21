@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Involved | Jeff Schoenborn for Baltimore City Republican Central Committee</title>
+  <meta name="description" content="Contact Jeff Schoenborn or get involved with the Baltimore City Republican Central Committee." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        Jeff Schoenborn
+        <span>Republican Central Committee &bull; Baltimore City &bull; 14th District</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Jeff</a></li>
+        <li><a href="issues.html">Issues</a></li>
+        <li><a href="district.html">14th District</a></li>
+        <li><a href="involved.html" class="active">Get Involved</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-label">Get Involved</span>
+      <h1>Baltimore Needs You<br>in the Room.</h1>
+      <p>The best way to make a difference in Baltimore's political future is to
+      get involved with the Republican Central Committee itself — not just to vote,
+      but to participate.</p>
+    </div>
+  </div>
+
+  <!-- MAIN SECTION -->
+  <section class="involved-section">
+    <div class="involved-inner container">
+
+      <!-- CONTACT FORM -->
+      <div class="contact-form-wrap">
+        <h2>Send Jeff a Message</h2>
+        <div class="divider"></div>
+
+        <div id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" placeholder="Jane" />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" placeholder="Smith" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="jane@example.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="neighborhood">Baltimore Neighborhood</label>
+            <input type="text" id="neighborhood" placeholder="e.g. Guilford, Charles Village, Fells Point…" />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">I'm interested in…</label>
+            <select id="subject">
+              <option value="">— Please select —</option>
+              <option value="question">Asking a question about the issues</option>
+              <option value="committee">Getting involved with the Central Committee</option>
+              <option value="updates">Staying informed / email updates</option>
+              <option value="meeting">Meeting Jeff to discuss Baltimore</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell Jeff what's on your mind…"></textarea>
+          </div>
+
+          <div style="margin-bottom: 1.25rem;">
+            <div class="form-check">
+              <input type="checkbox" id="optIn" />
+              <label for="optIn" style="font-family: var(--font-ui); font-size: 0.82rem; font-weight: 400; letter-spacing: 0; text-transform: none; color: var(--gray);">
+                Add me to Jeff's email list for updates.
+              </label>
+            </div>
+          </div>
+
+          <button class="btn btn-primary" id="submitBtn" onclick="handleSubmit()" style="width: 100%;">
+            Send Message
+          </button>
+
+          <div class="form-success" id="formSuccess">
+            ✓ Thank you — Jeff will be in touch soon.
+          </div>
+        </div>
+      </div>
+
+      <!-- INFO COLUMN -->
+      <div class="contact-info-col">
+        <span class="section-label">Contact</span>
+        <h2 class="section-title">Let's Talk Baltimore</h2>
+        <div class="divider"></div>
+
+        <p>
+          Jeff is a real person with a real email inbox. If you have a question
+          about Baltimore, the 14th District, or his positions on any issue,
+          he genuinely wants to hear from you.
+        </p>
+
+        <div class="contact-ways">
+          <div class="contact-way">
+            <div class="contact-way-icon">✉</div>
+            <div class="contact-way-text">
+              <strong>Email Jeff</strong>
+              <a href="mailto:jeffgop@schoenborn.us">jeffgop@schoenborn.us</a>
+            </div>
+          </div>
+          <div class="contact-way">
+            <div class="contact-way-icon">📍</div>
+            <div class="contact-way-text">
+              <strong>Location</strong>
+              <span style="color: var(--gray);">Guilford, Baltimore City, Maryland</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Get Involved with the Committee -->
+        <div style="margin-top: 2rem;">
+          <span class="section-label">Beyond This Campaign</span>
+          <h3 style="margin-bottom: 0.75rem;">Get Involved with the Central Committee</h3>
+          <div class="divider"></div>
+          <p style="font-size: 0.95rem; color: var(--charcoal); line-height: 1.85;">
+            This campaign is online only — but if you want to roll up your sleeves
+            and actually help build a stronger Republican Party in Baltimore, the
+            place to do that is the Central Committee itself. The committee meets
+            regularly, welcomes new participants, and always needs people willing
+            to contribute their time and skills.
+          </p>
+          <p style="font-size: 0.95rem; color: var(--charcoal); line-height: 1.85;">
+            Whether you have a background in technology, communications, law,
+            finance, or simply care deeply about Baltimore — there is a role for
+            you. Showing up is how change happens.
+          </p>
+          <a href="https://www.baltimorecitygop.org/" target="_blank" rel="noopener" class="btn btn-navy" style="margin-top: 0.5rem;">
+            Baltimore City Republican Central Committee →
+          </a>
+        </div>
+
+        <!-- What is the CC? -->
+        <div style="margin-top: 2rem; background: var(--navy); border-radius: var(--radius); padding: 1.75rem;">
+          <h3 style="color: var(--white); font-size: 1rem; margin-bottom: 0.75rem;">
+            What Is the Republican Central Committee?
+          </h3>
+          <p style="color: rgba(255,255,255,0.65); font-size: 0.88rem; line-height: 1.75; margin: 0;">
+            The Maryland Republican Central Committee is the official governing body
+            of the Republican Party in each jurisdiction. It fills vacancies in
+            elected offices, supports Republican candidates, manages party
+            operations, and serves as the voice of Republican voters in Baltimore
+            City. Your vote in this election directly shapes the direction of the
+            local party.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGOS STRIP -->
+  <div class="logos-strip">
+    <div class="logos-strip-inner">
+      <div class="logo-item">
+        <img src="images/bcrcc_logo.jpg" alt="Baltimore City Republican Central Committee" />
+        <span>Baltimore City GOP</span>
+      </div>
+      <div class="logo-divider"></div>
+      <div class="logo-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Maryland_state_seal.png/200px-Maryland_state_seal.png"
+             alt="Maryland State Seal"
+             style="height:68px;" />
+        <span>State of Maryland</span>
+      </div>
+      <div class="logo-divider"></div>
+      <div class="logo-item">
+        <div class="logo-placeholder">Baltimore City<br>Logo<br>Coming Soon</div>
+        <span>Baltimore City</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logos">
+        <div class="footer-logo-item">
+          <img src="images/bcrcc_logo.jpg" alt="Baltimore City GOP" style="height:56px;" />
+          <span class="footer-logo-label">Baltimore City GOP</span>
+        </div>
+        <div class="footer-logo-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Maryland_state_seal.png/200px-Maryland_state_seal.png"
+               alt="Maryland State Seal" style="height:48px;" />
+          <span class="footer-logo-label">Maryland</span>
+        </div>
+        <div class="footer-logo-item">
+          <div class="balt-city-placeholder">Baltimore<br>City Logo</div>
+          <span class="footer-logo-label">Baltimore City</span>
+        </div>
+      </div>
+      <div class="footer-brand">
+        <h3>Jeff Schoenborn</h3>
+        <p class="tagline">Republican Central Committee &bull; Baltimore City &bull; 14th District</p>
+        <p>A common-sense conservative committed to fiscal responsibility,
+        public safety, and opportunity for every Baltimorean.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Jeff</a></li>
+          <li><a href="issues.html">Issues</a></li>
+          <li><a href="district.html">14th District</a></li>
+          <li><a href="involved.html">Get Involved</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Issues</h4>
+        <ul>
+          <li><a href="issues.html#competitiveness">City Competitiveness</a></li>
+          <li><a href="issues.html#economy">Economic Development</a></li>
+          <li><a href="issues.html#fiscal">Fiscal Responsibility</a></li>
+          <li><a href="issues.html#education">Education &amp; Choice</a></li>
+          <li><a href="issues.html#safety">Public Safety</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="paid-for">Paid for by Jeff Schoenborn for Baltimore City Republican Central Committee</span>
+      <span class="party-badge">Republican &bull; 14th District &bull; Baltimore City</span>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+    function handleSubmit() {
+      const firstName = document.getElementById('firstName').value.trim();
+      const email = document.getElementById('email').value.trim();
+      if (!firstName || !email) {
+        alert('Please fill in your name and email address.');
+        return;
+      }
+      document.getElementById('submitBtn').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    }
+  </script>
+</body>
+</html>

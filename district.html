@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>14th District | Jeff Schoenborn for Baltimore City Republican Central Committee</title>
+  <meta name="description" content="Jeff Schoenborn represents the 14th Legislative District of Baltimore City — covering Guilford, Waverly, Lake Montebello, Clifton Park, and surrounding neighborhoods." />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .district-map-section {
+      padding: var(--section-pad);
+      background: var(--cream);
+    }
+    .district-map-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .district-map-wrap {
+      position: sticky;
+      top: 84px;
+    }
+    .district-map-wrap img {
+      width: 100%;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--gray-lt);
+    }
+    .district-map-wrap p {
+      font-family: var(--font-ui);
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      color: var(--gray);
+      text-align: center;
+      margin-top: 0.75rem;
+    }
+    .neighborhood-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.75rem 0;
+    }
+    .neighborhood-card {
+      background: var(--white);
+      border-top: 2px solid var(--gold);
+      padding: 1rem 1.25rem;
+      border-radius: var(--radius);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .neighborhood-card h4 {
+      font-size: 0.95rem;
+      margin-bottom: 0.3rem;
+      color: var(--navy);
+    }
+    .neighborhood-card p {
+      font-size: 0.82rem;
+      color: var(--gray);
+      line-height: 1.55;
+      margin: 0;
+    }
+    .accountability-block {
+      background: var(--navy-dark);
+      padding: var(--section-pad);
+    }
+    .accountability-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2rem;
+    }
+    .acc-stat {
+      text-align: center;
+      padding: 2rem 1rem;
+      border: 1px solid rgba(196,152,42,0.2);
+      border-radius: var(--radius);
+    }
+    .acc-stat strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .acc-stat p {
+      font-family: var(--font-ui);
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+      margin: 0;
+      line-height: 1.5;
+    }
+    .special-elections {
+      padding: var(--section-pad);
+      background: var(--cream-dk);
+    }
+    @media (max-width: 900px) {
+      .district-map-inner { grid-template-columns: 1fr; }
+      .district-map-wrap { position: static; }
+      .accountability-inner { grid-template-columns: 1fr; gap: 1rem; }
+      .neighborhood-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        Jeff Schoenborn
+        <span>Republican Central Committee &bull; Baltimore City &bull; 14th District</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Jeff</a></li>
+        <li><a href="issues.html">Issues</a></li>
+        <li><a href="district.html" class="active">14th District</a></li>
+        <li><a href="involved.html">Get Involved</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-label">14th Legislative District &bull; Baltimore City</span>
+      <h1>The Neighborhoods<br>Jeff Represents</h1>
+      <p>The 14th District spans some of Baltimore's most storied communities —
+      from the tree-lined streets of Guilford to the shores of Lake Montebello
+      and the parks of Clifton.</p>
+    </div>
+  </div>
+
+  <!-- DISTRICT MAP SECTION -->
+  <section class="district-map-section">
+    <div class="district-map-inner container">
+
+      <div class="district-map-wrap">
+        <img src="images/district14.png" alt="Map of Baltimore City 14th Legislative District" />
+        <p>Baltimore City 14th Legislative District — precinct boundaries</p>
+      </div>
+
+      <div>
+        <span class="section-label">About the District</span>
+        <h2 class="section-title">North and Northeast Baltimore</h2>
+        <div class="divider"></div>
+        <p>
+          The 14th Legislative District covers a broad swath of North and Northeast
+          Baltimore, encompassing some of the city's most distinctive and beloved
+          neighborhoods. Jeff Schoenborn has lived in this district for years —
+          currently in Guilford — and knows its streets, its residents, and its needs.
+        </p>
+        <p>
+          The district's neighborhoods range from historic rowhouse communities
+          to parkside enclaves, and include precincts that span council districts
+          9, 12, and 13. That diversity is a strength — and a reminder that
+          effective representation requires listening, not assumption.
+        </p>
+
+        <div class="neighborhood-grid">
+          <div class="neighborhood-card">
+            <h4>Guilford</h4>
+            <p>Jeff's home neighborhood. Tree-lined streets, historic architecture, and a strong civic tradition.</p>
+          </div>
+          <div class="neighborhood-card">
+            <h4>Waverly</h4>
+            <p>A proud working-class neighborhood with deep roots and a strong sense of community identity.</p>
+          </div>
+          <div class="neighborhood-card">
+            <h4>Lake Montebello</h4>
+            <p>Parkside living anchored by the reservoir — one of Baltimore's most walkable neighborhoods.</p>
+          </div>
+          <div class="neighborhood-card">
+            <h4>Clifton Park</h4>
+            <p>Home to Clifton Park and its historic mansion, golf course, and some of the city's best green space.</p>
+          </div>
+          <div class="neighborhood-card">
+            <h4>Pen Lucy</h4>
+            <p>A stable residential neighborhood where longtime homeowners form the backbone of civic life.</p>
+          </div>
+          <div class="neighborhood-card">
+            <h4>Coldstream–Homestead</h4>
+            <p>Historic rowhouse streets with a deep community character and an active neighborhood association.</p>
+          </div>
+        </div>
+
+        <p>
+          Jeff knows the 14th District not as a collection of precincts on a map,
+          but as a set of real communities with real concerns — about safety on
+          their streets, the condition of their parks, the quality of their schools,
+          and whether the city's leaders are paying attention.
+        </p>
+
+        <div style="background: var(--navy); border-radius: var(--radius); padding: 1.75rem; margin: 1.75rem 0;">
+          <h3 style="color: var(--white); font-size: 1rem; margin-bottom: 0.75rem;">
+            How the Central Committee Is Structured
+          </h3>
+          <p style="color: rgba(255,255,255,0.65); font-size: 0.88rem; line-height: 1.75; margin: 0;">
+            The Baltimore City Republican Central Committee mirrors the structure
+            of the Baltimore City Council. Voters in each of the city's council
+            districts elect two Republican committee members to represent them —
+            one of whom Jeff is seeking to be for the 14th District. This structure
+            ensures that every part of the city has a direct voice in how the
+            local Republican Party is organized and led.
+          </p>
+        </div>
+        <a href="involved.html" class="btn btn-navy" style="margin-top: 1rem;">Get in Touch</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ACCOUNTABILITY STATS -->
+  <div class="accountability-block">
+    <div style="text-align:center; margin-bottom: 2.5rem;">
+      <span class="section-label" style="color: var(--gold-lt);">The Case for Accountability</span>
+      <h2 style="color: var(--white);">Why a Strong Opposition Matters</h2>
+    </div>
+    <div class="accountability-inner">
+      <div class="acc-stat">
+        <strong>1942</strong>
+        <p>Last year a Republican served on Baltimore City Council</p>
+      </div>
+      <div class="acc-stat">
+        <strong>1967</strong>
+        <p>Last year a Republican held the Mayor's office</p>
+      </div>
+      <div class="acc-stat">
+        <strong>50+</strong>
+        <p>Years of uninterrupted single-party control</p>
+      </div>
+    </div>
+    <p style="text-align:center; color: rgba(255,255,255,0.55); font-size: 0.9rem; max-width: 640px; margin: 2rem auto 0; line-height: 1.8;">
+      Fifty years of single-party rule has led to wholesale disengagement and
+      disillusionment with the political process. People fundamentally don't feel
+      their vote matters. Restoring real accountability starts with building a
+      party that earns their trust.
+    </p>
+  </div>
+
+  <!-- VACANCY CRITERIA SECTION -->
+  <section class="special-elections">
+    <div class="container" style="max-width: 820px;">
+      <span class="section-label">Jeff's Position</span>
+      <h2 class="section-title">Choosing the Right People to Serve</h2>
+      <div class="divider"></div>
+      <p>
+        One of the Central Committee's most consequential responsibilities is
+        filling vacancies in the Maryland General Assembly. When a seat opens,
+        the committee appoints a replacement — and that decision matters. Jeff
+        has a clear standard for who deserves that appointment, looking for
+        the most qualified person to serve, not the most connected:
+      </p>
+      <ul class="values-list">
+        <li>Someone who genuinely knows the community they want to represent — not just its map, but its people and their real concerns.</li>
+        <li>Someone with the wisdom to think through the second and third-order effects of legislation — to ask not just "does this seem compassionate?" but "what incentives does this change, and for whom?"</li>
+        <li>Someone with real-world experience — ideally in business, working with diverse people and competing interests.</li>
+        <li>A servant, not an egoist looking for the next rung on the ladder.</li>
+      </ul>
+      <a href="issues.html" class="btn btn-navy" style="margin-top:1.5rem;">See All Positions</a>
+    </div>
+  </section>
+
+  <!-- LOGOS STRIP -->
+  <div class="logos-strip">
+    <div class="logos-strip-inner">
+      <div class="logo-item">
+        <img src="images/bcrcc_logo.jpg" alt="Baltimore City Republican Central Committee" />
+        <span>Baltimore City GOP</span>
+      </div>
+      <div class="logo-divider"></div>
+      <div class="logo-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Maryland_state_seal.png/200px-Maryland_state_seal.png"
+             alt="Maryland State Seal"
+             style="height:68px;" />
+        <span>State of Maryland</span>
+      </div>
+      <div class="logo-divider"></div>
+      <div class="logo-item">
+        <div class="logo-placeholder">Baltimore City<br>Logo<br>Coming Soon</div>
+        <span>Baltimore City</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <!-- Logos row -->
+      <div class="footer-logos">
+        <div class="footer-logo-item">
+          <img src="images/bcrcc_logo.jpg" alt="Baltimore City GOP" style="height:56px;" />
+          <span class="footer-logo-label">Baltimore City GOP</span>
+        </div>
+        <div class="footer-logo-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Maryland_state_seal.png/200px-Maryland_state_seal.png"
+               alt="Maryland State Seal" style="height:48px;" />
+          <span class="footer-logo-label">Maryland</span>
+        </div>
+        <div class="footer-logo-item">
+          <div class="balt-city-placeholder">Baltimore<br>City Logo</div>
+          <span class="footer-logo-label">Baltimore City</span>
+        </div>
+      </div>
+      <div class="footer-brand">
+        <h3>Jeff Schoenborn</h3>
+        <p class="tagline">Republican Central Committee &bull; Baltimore City &bull; 14th District</p>
+        <p>A common-sense conservative committed to fiscal responsibility,
+        public safety, and opportunity for every Baltimorean.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Jeff</a></li>
+          <li><a href="issues.html">Issues</a></li>
+          <li><a href="district.html">14th District</a></li>
+          <li><a href="involved.html">Get Involved</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Issues</h4>
+        <ul>
+          <li><a href="issues.html#safety">Public Safety</a></li>
+          <li><a href="issues.html#economy">Economic Development</a></li>
+          <li><a href="issues.html#fiscal">Fiscal Responsibility</a></li>
+          <li><a href="issues.html#education">Education &amp; Choice</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="paid-for">Paid for by Jeff Schoenborn for Baltimore City Republican Central Committee</span>
+      <span class="party-badge">Republican &bull; 14th District &bull; Baltimore City</span>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+  </script>
+</body>
+</html>
